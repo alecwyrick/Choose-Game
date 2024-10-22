@@ -1,1 +1,21 @@
+print("\n~~~~~~~WELCOME TO THE CHOICE ADVENTURE~~~~~~~")
+name=input("What is your name?")
 
+print(f"\nHello {name}.\n")
+
+print("Choose your weapon:")
+print("\n1. The mighty sword, great for melee, but you'll have some trouble aways\n")
+print("2. The sturdy bow, great for meleed foes, hitting them from afar.")
+print("\n3. The mystical staff, not too shabby for melee attacks, but better for medium ranged attacks\n")
+weaponchoice=input("So, which weapon, 1, 2, or 3?")
+
+valid=["1","2","3"]
+
+while(weaponchoice not in valid):
+    weaponchoice=input("Choose a weapon, 1, 2, or 3?")
+if weaponchoice=="1":
+    print("a")
+elif weaponchoice=="2":
+    print("b")
+elif weaponchoice=="3":
+    print("c")
