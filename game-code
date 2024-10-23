@@ -1,5 +1,7 @@
-print("\n~~~~~~~WELCOME TO THE CHOICE ADVENTURE~~~~~~~")
-name=input("What is your name?")
+print("~~~~~~~WELCOME TO THE CHOICE ADVENTURE~~~~~~~")
+print("\nWhere all your choices have consequences.\n")
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+name=input("\nWhat will be your adventurer's name?\n")
 
 print(f"\nHello {name}.\n")
 
@@ -15,7 +17,11 @@ while(weaponchoice not in valid):
     weaponchoice=input("Choose a weapon, 1, 2, or 3?")
 if weaponchoice=="1":
     print("a")
+    dweapon="mighty sword"
 elif weaponchoice=="2":
     print("b")
+    dweapon="sturdy bow"
 elif weaponchoice=="3":
     print("c")
+    dweapon="mystical staff"
+print(f"You have chosen the {dweapon}. Wise choice.")
