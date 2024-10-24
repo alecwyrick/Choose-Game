@@ -3,7 +3,19 @@ print("\nWhere all your choices have consequences.\n")
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 name=input("\nWhat will be your adventurer's name?\n")
 
-print(f"\nHello {name}.\n")
+start=input(f"\nIs {name} ready to start their journey? (y/n)\n")
+
+valid=["y","n"]
+
+while(start not in valid):
+    start=input(f"Is {name} ready to start their journey? (y/n)")
+
+if start=="y":
+    print("\nWell then! Time to introduce you to the world of ARGONSTROF\n")
+elif start=="n":
+    print("Another time then.")
+    exit()
+
 
 print("Choose your weapon:")
 print("\n1. The mighty sword, great for melee, but you'll have some trouble aways\n")
@@ -16,12 +28,9 @@ valid=["1","2","3"]
 while(weaponchoice not in valid):
     weaponchoice=input("Choose a weapon, 1, 2, or 3?")
 if weaponchoice=="1":
-    print("a")
     dweapon="mighty sword"
 elif weaponchoice=="2":
-    print("b")
     dweapon="sturdy bow"
 elif weaponchoice=="3":
-    print("c")
     dweapon="mystical staff"
 print(f"You have chosen the {dweapon}. Wise choice.")
