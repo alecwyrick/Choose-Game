@@ -11,12 +11,35 @@ while(start not in valid):
     start=input(f"Is {name} ready to start their journey? (y/n)")
 
 if start=="y":
-    print("\nWell then! Time to introduce you to the world of ARGONSTROF\n")
+    print("\nWell then! Time to introduce you to the world of ARGONSTROF!\n")
 elif start=="n":
     print("Another time then.")
     exit()
 
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+print("[You wake up from your bed in a daze]")
+print("\n'What happened?' You ask yourself.\n")
+print("[You look out the window at the bustling city of ERENDORF in awe]")
+print("'Woah. Where am I?'")
 
+move1=input("\nWhere to go? What to do? ERENDORF? Sleep?\n")
+
+valid=["ERENDORF","Sleep","Basement"]
+
+while(move1 not in valid):
+    move1=input("Where to go now? ERENDORF? Sleep?")
+
+if move1=="Sleep":
+    print("[You lie in your bed and close your eyes, hoping this is all a dream]")
+    print("\nLAZY ENDING 1/\n")
+    exit()
+elif move1=="ERENDORF":
+    print("\n[You get dressed and go out towards the city]\n")
+elif move1=="Basement":
+    print("You walk downstairs into your basement and hear a humming and buzzing noise coming from the furnace room")
+    print("'Wait, the furnace is off.' You open the door and see a purple crystal lying on floor.")
+    print("You pick it up, put it in your pocket, and head out the door")
+    
 print("Choose your weapon:")
 print("\n1. The mighty sword, great for melee, but you'll have some trouble aways\n")
 print("2. The sturdy bow, great for meleed foes, hitting them from afar.")
