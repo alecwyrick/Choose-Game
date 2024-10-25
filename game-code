@@ -12,6 +12,9 @@ while(start not in valid):
 
 if start=="y":
     print("\nWell then! Time to introduce you to the world of ARGONSTROF!\n")
+    gold=0
+    health=100
+    hascrystal="False"
 elif start=="n":
     print("Another time then.")
     exit()
@@ -37,9 +40,26 @@ elif move1=="ERENDORF":
     print("\n[You get dressed and go out towards the city]\n")
 elif move1=="Basement":
     print("You walk downstairs into your basement and hear a humming and buzzing noise coming from the furnace room")
-    print("'Wait, the furnace is off.' You open the door and see a purple crystal lying on floor.")
+    print("\n'Wait, the furnace is off.' You open the door and see a purple crystal lying on floor.\n")
     print("You pick it up, put it in your pocket, and head out the door")
-    
+    hascrystal="True"
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+print("\n[You walk into the town of ERENDORF]\n")
+print("You see a blacksmith, a tavern, a medic's hut, and a goods store")
+townmove1=input("Where to? (blacksmith, tavern, medic, goods)") 
+
+valid=["blacksmith","tavern","medic","goods"]
+while(townmove1 not in valid):
+    townmove1=input("Where to? (blacksmith, tavern, medic, goods)") 
+
+if townmove1=="blacksmith":
+    print("\n[You enter the blacksmith]")
+    print("\n'Hello there,' says the blacksmith")
+    print("'Are ye looking to buy some steel? Some weapons? Armor?'\n")
+    if gold==0 and hascrystal=="False":
+        print("Looking at your empty pockets, you say, 'Sorry, I dont have any gold on me'")
+    elif gold==0 and hascrystal=="True":
+        print("Looking at the only thing you have in your pocket, the crystal, you say, 'Sorry, I dont have any gold on me'")
 print("Choose your weapon:")
 print("\n1. The mighty sword, great for melee, but you'll have some trouble aways\n")
 print("2. The sturdy bow, great for meleed foes, hitting them from afar.")
