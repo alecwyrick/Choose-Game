@@ -5,8 +5,14 @@ print("MAKE SURE ALL ANSWERS ARE TYPED OUT LIKE THEY ARE SHOWN")
 print("                      NO SPACES                        ")
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 name=input("\nWhat will be your adventurer's name?\n")
+
 if name=="Tame Impala":
     print("Let it happen.")
+elif name=="Darth Vader":
+    print("'I am your father'")
+elif name=="Obi-Wan Kanobi":
+    print("'Hello there'")
+
 start=input(f"\nIs {name} ready to start their journey? (y/n)\n")
 
 valid=["y","n"]
@@ -109,8 +115,55 @@ if townmove1=="blacksmith":
     print(f"\n[YOU NOW HAVE {health}HP]\n")
     print("\n'Thanks!' You say as you leave the blacksmith.\n")
     print("You now see a tavern and a medic's hut in front of you.")
-    townmoveblacksmith=input("Where to now? (tavern, medic")
-    if townmoveblacksmith=="tavern":
+    townmoveblacksmith=input("Where to now? (tavern, medic)")
+    valid=["tavern","medic"]
+    while(townmoveblacksmith not in valid):
+        townmoveblacksmith=input("Where to now? (tavern, medic)")
+    if townmoveblacksmith=="medic":
+        print("You walk over to the hut and see a sign that says 'gone fishing.' Light's aren't on, it doesn't look like anybody's home.")
+        townmoveblacksmithmedic=input("'I guess we just go to the tavern now.' Go? (y/n)")
+        valid=["y","n","knock"]
+        while(townmoveblacksmithmedic not in valid):
+            townmoveblacksmithmedic=input("'I guess we just go to the tavern now.' Go? (y/n)")
+        while(townmoveblacksmithmedic=="n"):
+            print("Ok...? I guess we wait then.")
+            townmoveblacksmithmedic=input("Just tell me if you wanna go. (y)")
+        if townmoveblacksmithmedic=="knock":
+            print("[Hey. How do you know that?]")
+            print("[Not yet. You'll have access to the medic later.]")
+            print("[Let's just go now.]")
+            easteregg1="True"
+        elif townmoveblacksmithmedic=="y":
+            print("Ok. Let's go.")
+            print("You walk in to the tavern and see people sitting at tables drinking and playing card games.")
+        print(f"\nAn old man wearing an overcoat sitting at the bar yells, 'Adventurer! {name}! I have been expecting you!'\n")
+        print("\nYou walk over and sit next to him.\n")
+        print(f"'{name}, we have lots to talk about...'")
+        print("'Looks like you got some gear from the blacksmith.'")
+        print("'But you're missing some stuff.'")
+        print("'Ok, go to the medic and get some healing gear. When you get to the door, knock 3 times, then 2 times, then 6 times. The medic has been terrifed of what's to come and is waiting for the right person. I think that might be you. Go!'\n")
+        print("The man ushers you out of the tavern and points towards the medic's hut. 'Remember! 3,2,6!'\n")
+        print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
+        accessmedic1=input("How many times do you knock first?")
+        while(accessmedic1!="3"):
+            print("I don't think that was right.")
+            accessmedic1=input("How many times do you knock first?")
+        if accessmedic1=="3":
+            accessmedic2=input("Ok. How many now?")
+            while(accessmedic2!="2"):
+                print("I don't think that was right.")
+                accessmedic2=input("How many knocks?")
+            if accessmedic2=="2":
+                accessmedic3=input("Alright. Final set of knocks. How many?")
+                while(accessmedic3!="6"):
+                    print("No... Try something else.")
+                    accessmedic3=input("How many?")
+                if accessmedic3=="6":
+                    print("I think that was right.")
+                    print("The floor opens beneath you and you fall.")
+        
+            
+    elif townmoveblacksmith=="tavern":
         print("You walk in to the tavern and see people sitting at tables drinking and playing card games.")
         print(f"\nAn old man wearing an overcoat sitting at the bar yells, 'Adventurer! {name}! I have been expecting you!'\n")
         print("\nYou walk over and sit next to him.\n")
@@ -131,11 +184,13 @@ if townmove1=="blacksmith":
                 accessmedic2=input("How many knocks?")
             if accessmedic2=="2":
                 accessmedic3=input("Alright. Final set of knocks. How many?")
-                while(accessmedic2!="6"):
+                while(accessmedic3!="6"):
                     print("No... Try something else.")
                     accessmedic3=input("How many?")
                 if accessmedic3=="6":
-                    prin
+                    print("I think that was right.")
+                    print("The floor opens beneath you and you fall.")
+        print("ok")
                 
             
         
@@ -216,7 +271,13 @@ elif townmove1=="medic":
         easteregg1="True"
         townmovemedic=input("Go to the blacksmith or go to the tavern?")
     if townmovemedic=="tavern":
-        print(",")
+        print("You walk in to the tavern and see people sitting at tables drinking and playing card games.")
+        print(f"\nAn old man wearing an overcoat sitting at the bar yells, 'Adventurer! {name}! I have been expecting you!'\n")
+        print("\nYou walk over and sit next to him.\n")
+        print(f"'{name}, we have lots to talk about...'")
+        print("'But first! You must go to the blacksmith and get some gear. You'll be embarking on an adventure.'\n")
+        print("You leave the tavern and now see the blacksmith.")
+        
     elif townmovemedic=="blacksmith":
         print("\n[You enter the blacksmith]")
         print("\n'Hello there,' says the blacksmith")
@@ -266,3 +327,4 @@ elif townmove1=="medic":
         print("'Thanks!' You say as you leave the blacksmith.")
     
         print("\nNow only the tavern is left.\n")
+#~~~~~~~~~~~~~~~PROCEEDING TO THE FOREST~~~~~~~~~~~~~
