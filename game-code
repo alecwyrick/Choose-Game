@@ -12,6 +12,8 @@ elif name=="Darth Vader":
     print("'I am your father'")
 elif name=="Obi-Wan Kanobi":
     print("'Hello there'")
+elif name=="Groff":
+    print("'Let's go on an ADVENTURE!'")
 
 start=input(f"\nIs {name} ready to start their journey? (y/n)\n")
 
@@ -23,11 +25,11 @@ while(start not in valid):
 if start=="y":
     print("\nWell then! Time to introduce you to the world of ARGONSTROF!\n")
     gold=0
-    health=85
+    health=100
     damage=5
     hascrystal="False"
-    wentblacksmith="False"
     dweapon="undefined"
+    reviveability="False"
     easteregg1="False"
 elif start=="n":
     print("Another time then.")
@@ -118,7 +120,7 @@ if townmove1=="blacksmith":
     townmoveblacksmith=input("Where to now? (tavern, medic)")
     valid=["tavern","medic"]
     while(townmoveblacksmith not in valid):
-        townmoveblacksmith=input("Where to now? (tavern, medic)")
+        townmoveblacksmith=input("Where to now? (tavern, medic)")   
     if townmoveblacksmith=="medic":
         print("You walk over to the hut and see a sign that says 'gone fishing.' Light's aren't on, it doesn't look like anybody's home.")
         townmoveblacksmithmedic=input("'I guess we just go to the tavern now.' Go? (y/n)")
@@ -161,7 +163,25 @@ if townmove1=="blacksmith":
                 if accessmedic3=="6":
                     print("I think that was right.")
                     print("The floor opens beneath you and you fall.")
-        
+        print("\n. . .\n")
+        import time
+        time.sleep(2)
+        print(". . .")
+        time.sleep(1)
+        print("\nYou land on a soft dirt floor.")
+        print("You see a pair of glowing eyes. Looking at you.\n")
+        print(f"Your {dweapon} is lying on the floor, just out of arm's reach.\n")
+        print("You hear a scrape and see the creature is holding a torch that it just lit.\n")
+        print("'Ah. Sorry. You must be the adventurer Groff told me about.' Says a man wearing smooth garments and glasses.")
+        print("'Euh.. Ok. I have what you're looking for.'")
+        print("\nHe turns around and opens a crate behind him and pulls out 2 small potions and a small box.\n")
+        reviveability="True"
+        print("'Here. '")
+        print("\nHe hands you the items and you put them in your backpack.\n")
+        print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
+        print("\nYou nod your head.\n")
+        print("'Now. Go back to the tavern, Groff will be waiting for you.'")
+        print("'Take the ladder behind you.")
             
     elif townmoveblacksmith=="tavern":
         print("You walk in to the tavern and see people sitting at tables drinking and playing card games.")
@@ -190,9 +210,25 @@ if townmove1=="blacksmith":
                 if accessmedic3=="6":
                     print("I think that was right.")
                     print("The floor opens beneath you and you fall.")
-        print("ok")
-                
-            
+        print("\n. . .\n")
+        import time
+        time.sleep(2)
+        print(". . .")
+        time.sleep(1)
+        print("\nYou land on a soft dirt floor.")
+        print("You see a pair of glowing eyes. Looking at you.\n")
+        print(f"Your {dweapon} is lying on the floor, just out of arm's reach.\n")
+        print("You hear a scrape and see the creature is holding a torch that it just lit.\n")
+        print("'Ah. Sorry. You must be the adventurer Groff told me about.' Says a man wearing smooth garments and glasses.")
+        print("'Euh.. Ok. I have what you're looking for.'")
+        print("\nHe turns around and opens a crate behind him and pulls out 2 small potions and a small box.\n")
+        reviveability="True"
+        print("'Here. '")
+        print("\nHe hands you the items and you put them in your backpack.\n")
+        print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
+        print("\nYou nod your head.\n")
+        print("'Now. Go back to the tavern, Groff will be waiting for you.'")
+        print("'Take the ladder behind you.")
         
 elif townmove1=="tavern":
     print("You walk in to the tavern and see people sitting at tables drinking and playing card games.")
@@ -327,4 +363,5 @@ elif townmove1=="medic":
         print("'Thanks!' You say as you leave the blacksmith.")
     
         print("\nNow only the tavern is left.\n")
+print("skip")
 #~~~~~~~~~~~~~~~PROCEEDING TO THE FOREST~~~~~~~~~~~~~
