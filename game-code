@@ -148,12 +148,12 @@ if townmove1=="blacksmith":
         print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
         accessmedic1=input("How many times do you knock first?")
         while(accessmedic1!="3"):
-            print("I don't think that was right.")
+            print("That didn't work. Maybe there's a password of sorts..")
             accessmedic1=input("How many times do you knock first?")
         if accessmedic1=="3":
             accessmedic2=input("Ok. How many now?")
             while(accessmedic2!="2"):
-                print("I don't think that was right.")
+                print("That didn't work. Maybe there's a password of sorts..")
                 accessmedic2=input("How many knocks?")
             if accessmedic2=="2":
                 accessmedic3=input("Alright. Final set of knocks. How many?")
@@ -195,12 +195,12 @@ if townmove1=="blacksmith":
         print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
         accessmedic1=input("How many times do you knock first?")
         while(accessmedic1!="3"):
-            print("I don't think that was right.")
+            print("That didn't work. Maybe there's a password of sorts..")
             accessmedic1=input("How many times do you knock first?")
         if accessmedic1=="3":
             accessmedic2=input("Ok. How many now?")
             while(accessmedic2!="2"):
-                print("I don't think that was right.")
+                print("That didn't work. Maybe there's a password of sorts..")
                 accessmedic2=input("How many knocks?")
             if accessmedic2=="2":
                 accessmedic3=input("Alright. Final set of knocks. How many?")
@@ -299,12 +299,12 @@ elif townmove1=="tavern":
         print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
         accessmedic1=input("How many times do you knock first?")
         while(accessmedic1!="3"):
-            print("I don't think that was right.")
+            print("That didn't work. Maybe there's a password of sorts..")
             accessmedic1=input("How many times do you knock first?")
         if accessmedic1=="3":
             accessmedic2=input("Ok. How many now?")
             while(accessmedic2!="2"):
-                print("I don't think that was right.")
+                print("That didn't work. Maybe there's a password of sorts..")
                 accessmedic2=input("How many knocks?")
             if accessmedic2=="2":
                 accessmedic3=input("Alright. Final set of knocks. How many?")
@@ -401,18 +401,19 @@ elif townmove1=="medic":
         print("\n'Thanks!' You say as you leave the blacksmith.\n")
         print("You now see the tavern in front of you.")
         print("'I guess I just go back to the tavern.'")
+        print("On your way to the tavern, the old man walks out and says, 'Looks like you've got your steel gear from the blacksmith.'")
         print("'But you're missing some stuff.'")
         print("'Ok, go to the medic and get some healing gear. When you get to the door, knock 3 times, then 2 times, then 6 times. The medic has been terrifed of what's to come and is waiting for the right person. I think that might be you. Go!'\n")
         print("The man ushers you out of the tavern and points towards the medic's hut. 'Remember! 3,2,6!'\n")
         print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
         accessmedic1=input("How many times do you knock first?")
         while(accessmedic1!="3"):
-            print("I don't think that was right.")
+            print("That didn't work. Maybe there's a password of sorts..")
             accessmedic1=input("How many times do you knock first?")
         if accessmedic1=="3":
             accessmedic2=input("Ok. How many now?")
             while(accessmedic2!="2"):
-                print("I don't think that was right.")
+                print("That didn't work. Maybe there's a password of sorts..")
                 accessmedic2=input("How many knocks?")
             if accessmedic2=="2":
                 accessmedic3=input("Alright. Final set of knocks. How many?")
@@ -496,12 +497,12 @@ elif townmove1=="medic":
         print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
         accessmedic1=input("How many times do you knock first?")
         while(accessmedic1!="3"):
-            print("I don't think that was right.")
+            print("That didn't work. Maybe there's a password of sorts..")
             accessmedic1=input("How many times do you knock first?")
         if accessmedic1=="3":
             accessmedic2=input("Ok. How many now?")
             while(accessmedic2!="2"):
-                print("I don't think that was right.")
+                print("That didn't work. Maybe there's a password of sorts..")
                 accessmedic2=input("How many knocks?")
             if accessmedic2=="2":
                 accessmedic3=input("Alright. Final set of knocks. How many?")
