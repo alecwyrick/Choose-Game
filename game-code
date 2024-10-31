@@ -696,7 +696,7 @@ elif townmove1=="medic":
         print("'Take the ladder behind you.'")
         time.sleep(2)
         
-print("You walk back to the tavern and see Groff, the old man, sitting at a table.")
+print("\nYou walk back to the tavern and see Groff, the old man, sitting at a table.")
 time.sleep(2)
 print("You sit down next to him.")
 skipdialogue1=input("[SKIP DIALOGUE?] (y/n)")
@@ -720,4 +720,22 @@ elif skipdialogue1=="n":
     print("'Then came along a very talented wizard, who created 3 crystals that could subdue the beast.'")
     time.sleep(5)
     print("'The wizard then created a pedastal that with the 3 crystals placed on it, created a shield around the beast and set it in hibernation.'")
+    time.sleep(4)
+    print("'Then some some ruffians went to the mountain, scattered the crystals across the land, trying to control the dragon for themselves, but they failed and they were killed.'")
+    time.sleep(5)
+    print("'The wizard then sacrificed himself, using all his power, to create a temporary hibernation spell against the dragon.'")
+    time.sleep(4)
+    print("'That spell is now running out. You now need to either find the crystals, or slay the dragon.'")
+    time.sleep(4)
+    print("'Now, slaying the dragon is possibly your only option, because we have searched the lands high and low, and no one has found the crystals in over 80 years.'")
+    time.sleep(4)
+    progress1=input(f"'So adventurer, are you ready? {name}, are you ready to embark on a journey that might end up in death? But it'll save the world. (Yes/No)")
+    valid=["Yes","No"]
+    while(progress1 not in valid):
+        progress1=input("'So? Are you ready? (Yes/No)'")
+    while(progress1=="No"):
+        print("'What? No? Really?'")
+        progress1=input("'Just tell me when you're ready.'")
+    if progress=="Yes":
+        print("'Alright,")
 #~~~~~~~~~~~~~~~PROCEEDING TO THE FOREST~~~~~~~~~~~~~
