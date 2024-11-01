@@ -15,6 +15,21 @@ elif name=="Obi-Wan Kanobi":
 elif name=="Groff":
     print("'Let's go on an ADVENTURE!'")
 
+mode=input("Fast mode or slow mode? (fast/slow)")
+valid=["fast","slow"]
+if mode=="fast":
+    delay1=""
+    delay2=""
+    delay3=""
+    delay4=""
+    delay5=""
+elif mode=="slow":
+    delay1=time.sleep(1)
+    delay2=time.sleep(2)
+    delay3=time.sleep(3)
+    delay4=time.sleep(4)
+    delay5=time.sleep(5)
+
 start=input(f"\nIs {name} ready to start their journey? (y/n)\n")
 
 valid=["y","n"]
@@ -197,7 +212,7 @@ if townmove1=="blacksmith":
         import time
         time.sleep(2)
         print(". . .")
-        time.sleep(1)
+        delay1
         print("\nYou land on a soft dirt floor.")
         time.sleep(2)
         print("You see a pair of glowing eyes. Looking at you.\n")
@@ -214,17 +229,17 @@ if townmove1=="blacksmith":
         time.sleep(2)
         reviveability="True"
         print("'Here. '")
-        time.sleep(1)
+        delay1
         print("\nHe hands you the items and you put them in your backpack.\n")
         time.sleep(2)
         print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
         time.sleep(2)
         print("\nYou nod your head.\n")
-        time.sleep(1)
+        print(delay1)
         print("'Now. Go back to the tavern, Groff will be waiting for you.'")
-        time.sleep(1)
+        delay1
         print("'Take the ladder behind you.")
-        time.sleep(2)
+        print(delay2)
 #Blacksmith-->Tavern
     elif townmoveblacksmith=="tavern":
         print("You walk in to the tavern and see people sitting at tables drinking and playing card games.")
@@ -267,7 +282,7 @@ if townmove1=="blacksmith":
         import time
         time.sleep(2)
         print(". . .")
-        time.sleep(1)
+        delay1
         print("\nYou land on a soft dirt floor.")
         time.sleep(2)
         print("You see a pair of glowing eyes. Looking at you.\n")
@@ -284,7 +299,7 @@ if townmove1=="blacksmith":
         time.sleep(2)
         reviveability="True"
         print("'Here. '")
-        time.sleep(1)
+        delay1
         print("\nHe hands you the items and you put them in your backpack.\n")
         time.sleep(2)
         print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
@@ -335,7 +350,7 @@ elif townmove1=="tavern":
         print("\n'Awe don't worry mate... uhh.. first one's on the house.'")
         time.sleep(2)
         print("'Here.'\n")
-        time.sleep(1)
+        delay1
         print("Choose your weapon:")
         time.sleep(2)
         print("\n1. The mighty sword, great for melee, but you'll have some trouble aways\n")
@@ -383,7 +398,7 @@ elif townmove1=="tavern":
         print("\nYou walk towards the tavern and the old man walks up to you.\n")
         time.sleep(2)
         print("'Splendid! Looks like you've got some steel from the blacksmith. Now, head to the medic to get some very helpful items.'")
-        time.sleep(3)
+        print(delay3)
         print("'But first!, when you get to the medic, remember to knock 3 times first, then 2, then 6.'")
         time.sleep(2)
         print("\nHe points towards the medic's hut.")
@@ -412,7 +427,7 @@ elif townmove1=="tavern":
         import time
         time.sleep(2)
         print(". . .")
-        time.sleep(1)
+        delay1
         print("\nYou land on a soft dirt floor.")
         time.sleep(2)
         print("You see a pair of glowing eyes. Looking at you.\n")
@@ -429,7 +444,7 @@ elif townmove1=="tavern":
         time.sleep(2)
         reviveability="True"
         print("'Here. '")
-        time.sleep(1)
+        delay1
         print("\nHe hands you the items and you put them in your backpack.\n")
         time.sleep(2)
         print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
@@ -445,7 +460,7 @@ elif townmove1=="medic":
     print("You walk up to the hut and see there's a sign on the door that says gone fishing")
     time.sleep(2)
     print("You look at your other options.")
-    time.sleep(1)
+    delay1
     townmovemedic=input("Go to the blacksmith or go to the tavern?")
     valid=["blacksmith","tavern","knock"]
     while(townmovemedic not in valid):
@@ -484,7 +499,7 @@ elif townmove1=="medic":
         print("\n'Awe don't worry mate... uhh.. first one's on the house.'")
         time.sleep(2)
         print("'Here.'\n")
-        time.sleep(1)
+        delay1
         print("Choose your weapon:")
         time.sleep(2)
         print("\n1. The mighty sword, great for melee, but you'll have some trouble aways\n")
@@ -564,7 +579,7 @@ elif townmove1=="medic":
         import time
         time.sleep(2)
         print(". . .")
-        time.sleep(1)
+        delay1
         print("\nYou land on a soft dirt floor.")
         time.sleep(2)
         print("You see a pair of glowing eyes. Looking at you.\n")
@@ -581,7 +596,7 @@ elif townmove1=="medic":
         time.sleep(2)
         reviveability="True"
         print("'Here. '")
-        time.sleep(1)
+        delay1
         print("\nHe hands you the items and you put them in your backpack.\n")
         time.sleep(2)
         print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
@@ -606,7 +621,7 @@ elif townmove1=="medic":
            print("Looking at the only thing you have in your pocket, the crystal, you say, 'Sorry, I dont have any gold on me'")
         print("\n'Awe don't worry mate... uhh.. first one's on the house.'")
         print("'Here.'\n")
-        time.sleep(1)
+        delay1
         print("Choose your weapon:")
         time.sleep(2)
         print("\n1. The mighty sword, great for melee, but you'll have some trouble aways\n")
@@ -682,7 +697,7 @@ elif townmove1=="medic":
         import time
         time.sleep(2)
         print(". . .")
-        time.sleep(1)
+        delay1
         print("\nYou land on a soft dirt floor.")
         time.sleep(2)
         print("You see a pair of glowing eyes. Looking at you.\n")
@@ -699,7 +714,7 @@ elif townmove1=="medic":
         time.sleep(2)
         reviveability="True"
         print("'Here. '")
-        time.sleep(1)
+        delay1
         print("\nHe hands you the items and you put them in your backpack.\n")
         time.sleep(2)
         print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
@@ -734,7 +749,7 @@ elif skipdialogue1=="n":
     print("'Then came along a very talented wizard, who created 3 crystals that could subdue the beast.'")
     time.sleep(5)
     print("'The wizard then created a pedastal that with the 3 crystals placed on it, created a shield around the beast and set it in hibernation.'")
-    time.sleep(4)
+    print(delay4)
     print("'Then some some ruffians went to the mountain, scattered the crystals across the land, trying to control the dragon for themselves, but they failed and they were killed.'")
     time.sleep(5)
     print("'The wizard then sacrificed himself, using all his power, to create a temporary hibernation spell against the dragon.'")
@@ -758,5 +773,5 @@ elif skipdialogue1=="n":
         print("'The dragon and pedastal should be around there.'")
         time.sleep(2)
 print("[HEADING TO THE FOREST]")
-time.sleep(5)
+print(delay5)
 #Town==>Forest
