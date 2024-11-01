@@ -35,7 +35,7 @@ if start=="y":
 elif start=="n":
     print("Another time then.")
     exit()
-
+#start
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 time.sleep(2)
 print("[You wake up from your bed in a daze]")
@@ -68,6 +68,7 @@ elif move1=="Basement":
     time.sleep(2)
     print("You pick it up, put it in your pocket, and head out the door")
     hascrystal="True"
+#==>Town
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("\n[You walk into the town of ERENDORF]\n")
 print("You see a blacksmith, a tavern, and a medic's hut")
@@ -76,7 +77,7 @@ townmove1=input("Where to? (blacksmith, tavern, medic)")
 valid=["blacksmith","tavern","medic"]
 while(townmove1 not in valid):
     townmove1=input("Where to? (blacksmith, tavern, medic)") 
-
+#Town-->Blacksmith
 if townmove1=="blacksmith":
     print("\n[You enter the blacksmith]")
     print("\n'Hello there,' says the blacksmith")
@@ -136,6 +137,7 @@ if townmove1=="blacksmith":
     valid=["tavern","medic"]
     while(townmoveblacksmith not in valid):
         townmoveblacksmith=input("Where to now? (tavern, medic)")   
+#Blacksmith-->Medic
     if townmoveblacksmith=="medic":
         print("You walk over to the hut and see a sign that says 'gone fishing.' Light's aren't on, it doesn't look like anybody's home.")
         time.sleep(3)
@@ -151,6 +153,7 @@ if townmove1=="blacksmith":
             print("[Not yet. You'll have access to the medic later.]")
             print("[Let's just go now.]")
             easteregg1="True"
+#Blacksmith-->Medic-->Tavern
         elif townmoveblacksmithmedic=="y":
             print("Ok. Let's go.")
             time.sleep(2)
@@ -169,6 +172,7 @@ if townmove1=="blacksmith":
         print("'Ok, go to the medic and get some healing gear. When you get to the door, knock 3 times, then 2 times, then 6 times. The medic has been terrifed of what's to come and is waiting for the right person. I think that might be you. Go!'\n")
         time.sleep(4)
         print("The man ushers you out of the tavern and points towards the medic's hut. 'Remember! 3,2,6!'\n")
+#Blacksmith-->Medic-->Tavern-->Medic
         time.sleep(2)
         print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
         time.sleep(2)
@@ -221,7 +225,7 @@ if townmove1=="blacksmith":
         time.sleep(1)
         print("'Take the ladder behind you.")
         time.sleep(2)
-            
+#Blacksmith-->Tavern
     elif townmoveblacksmith=="tavern":
         print("You walk in to the tavern and see people sitting at tables drinking and playing card games.")
         time.sleep(2)
@@ -238,6 +242,7 @@ if townmove1=="blacksmith":
         print("'Ok, go to the medic and get some healing gear. When you get to the door, knock 3 times, then 2 times, then 6 times. The medic has been terrifed of what's to come and is waiting for the right person. I think that might be you. Go!'\n")
         time.sleep(4)
         print("The man ushers you out of the tavern and points towards the medic's hut. 'Remember! 3,2,6!'\n")
+#Blacksmith-->Tavern-->Medic
         time.sleep(2)
         print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
         time.sleep(2)
@@ -290,7 +295,7 @@ if townmove1=="blacksmith":
         time.sleep(2)
         print("'Take the ladder behind you.")
         time.sleep(2)
-        
+#Town-->Tavern
 elif townmove1=="tavern":
     print("You walk in to the tavern and see people sitting at tables drinking and playing card games.")
     time.sleep(2)
@@ -311,6 +316,7 @@ elif townmove1=="tavern":
     while(townmovetavern=="medic"):
         print("'I don't think he wanted me to go to the blacksmith'")
         townmovetavern=input("'He said something along the lines of going somewhere and getting gear. Something -ith.'")
+#Tavern-->Blacksmith
     if townmovetavern=="blacksmith":
         print("'Right. The blacksmith. Ok. Let's go.'")
         time.sleep(2)
@@ -381,6 +387,7 @@ elif townmove1=="tavern":
         print("'But first!, when you get to the medic, remember to knock 3 times first, then 2, then 6.'")
         time.sleep(2)
         print("\nHe points towards the medic's hut.")
+#Tavern-->Blacksmith-->Medic
         time.sleep(2)
         print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
         time.sleep(2)
@@ -433,7 +440,7 @@ elif townmove1=="tavern":
         time.sleep(2)
         print("'Take the ladder behind you.")
         time.sleep(2)
-
+#Town-->Medic
 elif townmove1=="medic":
     print("You walk up to the hut and see there's a sign on the door that says gone fishing")
     time.sleep(2)
@@ -448,6 +455,7 @@ elif townmove1=="medic":
         print("[Not yet. You'll have access to the medic later.]")
         easteregg1="True"
         townmovemedic=input("Go to the blacksmith or go to the tavern?")
+#Medic-->Tavern
     if townmovemedic=="tavern":
         print("You walk in to the tavern and see people sitting at tables drinking and playing card games.")
         time.sleep(2)
@@ -458,6 +466,7 @@ elif townmove1=="medic":
         print(f"'{name}, we have lots to talk about...'")
         time.sleep(2)
         print("'But first! You must go to the blacksmith and get some gear. You'll be embarking on an adventure.'\n")
+#Medic-->Tavern-->Blacksmith
         time.sleep(2)
         print("You leave the tavern and now see the blacksmith.")
         time.sleep(2)
@@ -519,6 +528,7 @@ elif townmove1=="medic":
         time.sleep(2)
         print("'Thanks!' You say as you leave the blacksmith.\n")
         time.sleep(2)
+#Medic-->Tavern-->Blacksmith-->Tavern
         print("You now see the tavern in front of you.")
         time.sleep(2)
         print("'I guess I just go back to the tavern.'")
@@ -531,6 +541,7 @@ elif townmove1=="medic":
         time.sleep(4)
         print("The man ushers you out of the tavern and points towards the medic's hut. 'Remember! 3,2,6!'\n")
         time.sleep(2)
+#Medic-->Tavern-->Blacksmith-->Tavern-->Medic
         print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
         accessmedic1=input("How many times do you knock first?")
         while(accessmedic1!="3"):
@@ -581,6 +592,7 @@ elif townmove1=="medic":
         time.sleep(2)
         print("'Take the ladder behind you.'")
         time.sleep(2)
+#Medic-->Blacksmith
     elif townmovemedic=="blacksmith":
         print("\n[You enter the blacksmith]")
         time.sleep(2)
@@ -638,6 +650,7 @@ elif townmove1=="medic":
         time.sleep(2)
         print("'Thanks!' You say as you leave the blacksmith.")
         time.sleep(2)
+#Medic-->Blacksmith-->Tavern
         print("\nYou walk towards the tavern and the old man walks up to you.\n")
         time.sleep(2)
         print("'Splendid! Looks like you've got some steel from the blacksmith. Now, head to the medic to get some very helpful items.'")
@@ -645,6 +658,7 @@ elif townmove1=="medic":
         print("'But first!, when you get to the medic, remeber to knock 3 times first, then 2, then 6.'")
         time.sleep(2)
         print("\nHe points towards the medic's hut.")
+#Medic-->Blacksmith-->Tavern-->Medic
         time.sleep(2)
         print("You walk to the medic's hut and see a sign that says 'gone fishing.'")
         accessmedic1=input("How many times do you knock first?")
@@ -695,7 +709,7 @@ elif townmove1=="medic":
         time.sleep(2)
         print("'Take the ladder behind you.'")
         time.sleep(2)
-        
+#-->Tavern
 print("\nYou walk back to the tavern and see Groff, the old man, sitting at a table.")
 time.sleep(2)
 print("You sit down next to him.")
@@ -729,13 +743,20 @@ elif skipdialogue1=="n":
     time.sleep(4)
     print("'Now, slaying the dragon is possibly your only option, because we have searched the lands high and low, and no one has found the crystals in over 80 years.'")
     time.sleep(4)
-    progress1=input(f"'So adventurer, are you ready? {name}, are you ready to embark on a journey that might end up in death? But it'll save the world. (Yes/No)")
+    progress1=input(f"'So adventurer, are you ready? {name}, are you ready to embark on a journey that might end up in death? But it might also save the world. (Yes/No)")
     valid=["Yes","No"]
     while(progress1 not in valid):
         progress1=input("'So? Are you ready? (Yes/No)'")
     while(progress1=="No"):
         print("'What? No? Really?'")
         progress1=input("'Just tell me when you're ready.'")
-    if progress=="Yes":
-        print("'Alright,")
-#~~~~~~~~~~~~~~~PROCEEDING TO THE FOREST~~~~~~~~~~~~~
+    if progress1=="Yes":
+        print("'Alright, down the path, you'll see a forest, The Foggy, Flexy, & Foxy Forest as they call it. They call it that because of its winding paths and mysterious look.'")
+        time.sleep(3)
+        print("'Go through that forest and find your way to The Miserable Mountains.'")
+        time.sleep(2)
+        print("'The dragon and pedastal should be around there.'")
+        time.sleep(2)
+print("[HEADING TO THE FOREST]")
+time.sleep(5)
+#Town==>Forest
