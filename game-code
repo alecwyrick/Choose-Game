@@ -198,7 +198,7 @@ if townmove1=="blacksmith":
         import time
         time.sleep(2)
         print(". . .")
-        delay1
+        time.sleep(1)
         print("\nYou land on a soft dirt floor.")
         time.sleep(2)
         print("You see a pair of glowing eyes. Looking at you.\n")
@@ -215,7 +215,7 @@ if townmove1=="blacksmith":
         time.sleep(2)
         reviveability="True"
         print("'Here. '")
-        delay1
+        time.sleep(1)
         print("\nHe hands you the items and you put them in your backpack.\n")
         time.sleep(2)
         print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
@@ -223,7 +223,7 @@ if townmove1=="blacksmith":
         print("\nYou nod your head.\n")
         time.sleep(1)
         print("'Now. Go back to the tavern, Groff will be waiting for you.'")
-        delay1
+        time.sleep(1)
         print("'Take the ladder behind you.")
         time.sleep(2)
 #Blacksmith-->Tavern
@@ -268,7 +268,7 @@ if townmove1=="blacksmith":
         import time
         time.sleep(2)
         print(". . .")
-        delay1
+        time.sleep(1)
         print("\nYou land on a soft dirt floor.")
         time.sleep(2)
         print("You see a pair of glowing eyes. Looking at you.\n")
@@ -285,7 +285,7 @@ if townmove1=="blacksmith":
         time.sleep(2)
         reviveability="True"
         print("'Here. '")
-        delay1
+        time.sleep(1)
         print("\nHe hands you the items and you put them in your backpack.\n")
         time.sleep(2)
         print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
@@ -336,7 +336,7 @@ elif townmove1=="tavern":
         print("\n'Awe don't worry mate... uhh.. first one's on the house.'")
         time.sleep(2)
         print("'Here.'\n")
-        delay1
+        time.sleep(1)
         print("Choose your weapon:")
         time.sleep(2)
         print("\n1. The mighty sword, great for melee, but you'll have some trouble aways\n")
@@ -413,7 +413,7 @@ elif townmove1=="tavern":
         import time
         time.sleep(2)
         print(". . .")
-        delay1
+        time.sleep(1)
         print("\nYou land on a soft dirt floor.")
         time.sleep(2)
         print("You see a pair of glowing eyes. Looking at you.\n")
@@ -430,7 +430,7 @@ elif townmove1=="tavern":
         time.sleep(2)
         reviveability="True"
         print("'Here. '")
-        delay1
+        time.sleep(1)
         print("\nHe hands you the items and you put them in your backpack.\n")
         time.sleep(2)
         print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
@@ -446,7 +446,7 @@ elif townmove1=="medic":
     print("You walk up to the hut and see there's a sign on the door that says gone fishing")
     time.sleep(2)
     print("You look at your other options.")
-    delay1
+    time.sleep(1)
     townmovemedic=input("Go to the blacksmith or go to the tavern?")
     valid=["blacksmith","tavern","knock"]
     while(townmovemedic not in valid):
@@ -485,7 +485,7 @@ elif townmove1=="medic":
         print("\n'Awe don't worry mate... uhh.. first one's on the house.'")
         time.sleep(2)
         print("'Here.'\n")
-        delay1
+        time.sleep(1)
         print("Choose your weapon:")
         time.sleep(2)
         print("\n1. The mighty sword, great for melee, but you'll have some trouble aways\n")
@@ -565,7 +565,7 @@ elif townmove1=="medic":
         import time
         time.sleep(2)
         print(". . .")
-        delay1
+        time.sleep(1)
         print("\nYou land on a soft dirt floor.")
         time.sleep(2)
         print("You see a pair of glowing eyes. Looking at you.\n")
@@ -582,7 +582,7 @@ elif townmove1=="medic":
         time.sleep(2)
         reviveability="True"
         print("'Here. '")
-        delay1
+        time.sleep(1)
         print("\nHe hands you the items and you put them in your backpack.\n")
         time.sleep(2)
         print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
@@ -607,7 +607,7 @@ elif townmove1=="medic":
            print("Looking at the only thing you have in your pocket, the crystal, you say, 'Sorry, I dont have any gold on me'")
         print("\n'Awe don't worry mate... uhh.. first one's on the house.'")
         print("'Here.'\n")
-        delay1
+        time.sleep(1)
         print("Choose your weapon:")
         time.sleep(2)
         print("\n1. The mighty sword, great for melee, but you'll have some trouble aways\n")
@@ -683,7 +683,7 @@ elif townmove1=="medic":
         import time
         time.sleep(2)
         print(". . .")
-        delay1
+        time.sleep(1)
         print("\nYou land on a soft dirt floor.")
         time.sleep(2)
         print("You see a pair of glowing eyes. Looking at you.\n")
@@ -700,7 +700,7 @@ elif townmove1=="medic":
         time.sleep(2)
         reviveability="True"
         print("'Here. '")
-        delay1
+        time.sleep(1)
         print("\nHe hands you the items and you put them in your backpack.\n")
         time.sleep(2)
         print("He says, 'Use the potions when you are low on health and use the pill inside the box on the brink of death.'")
@@ -759,10 +759,37 @@ elif skipdialogue1=="n":
         print("'The dragon and pedastal should be around there.'")
         time.sleep(2)
 print("[HEADING TO THE FOREST]")
-time.sleep(5)
+time.sleep(3)
+print("[WARNING: SOME PATHS MAY LEAD TO DEATH AND ")
 #Town==>Forest
 print("You walk down the path and see the forest in front of you.")
 print("The path splits into two.")
+#L R L L = moutain
+#R R L R = maze
 forestmove1=input("Left or right? (left/right)")
 valid=["left","right"]
-while()
+while(forestmove1 not in valid):
+    forestmove1=input("So? (left/right)")
+#L
+if forestmove1=="left":
+    forestmove2=input("You walk down the left path. You see the path split into two. (left/right)")
+    valid=["left","right"]
+    while(forestmove1 not in valid):
+        forestmove2=input("So? (left/right)")
+#L L
+    if forestmove2=="left":
+        print("You walk down the left path. You hear a crunch below and feel a sharp pain in your leg.")
+        time.sleep(2)
+        print("You look down and see a snake that has bitten your leg.")
+        time.sleep(2)
+        print("Your vision fades and you run out of breath.")
+        time.sleep(1)
+        print("You fall and die.")
+        time.sleep(1)
+        print("BAD ENDING 2/")
+#L R
+    elif forestmove2=="right":
+        forestmove3=input("You walk down the left path. You see the path split into two. (left/right)")
+#R
+    elif forestmove1=="right":
+        forestmove2=input("You walk down the left path. You see the path split into two. (left/right)")
