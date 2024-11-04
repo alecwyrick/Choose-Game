@@ -761,3 +761,8 @@ elif skipdialogue1=="n":
 print("[HEADING TO THE FOREST]")
 time.sleep(5)
 #Town==>Forest
+print("You walk down the path and see the forest in front of you.")
+print("The path splits into two.")
+forestmove1=input("Left or right? (left/right)")
+valid=["left","right"]
+while()
