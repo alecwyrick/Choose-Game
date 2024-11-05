@@ -823,7 +823,7 @@ if forestmove1=="left":
                 print("::::...:::;;:::::;;;;;;;;;;;;;;:::::;;::{:::::::;;;:..  .:;:... ::;;::::..")
                 print(";;;;:::;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;];;;;;;;;;;::::::;;;;:.::;;;;;;;;:..")
                 time.sleep(3)
-                print("")
+                
 #L R L R            
             elif forestmove4=="right":
                 print("You walk down the right path.")
@@ -884,3 +884,55 @@ if forestmove1=="left":
 #R R L
             elif forestmove3b=="left":
                 forestmove4b=input("You walk down the left path. You see the path split into two. (left/right)")
+                valid=["left","right"]
+                while(forestmove4b not in valid):
+                    forestmove4b=input("So? Left or Right? (left/right)")
+#R R L L
+                if forestmove4b=="left":
+                    print("You walk down the left path.")
+                    time.sleep(2)
+                    print("You see a witch and she throws a handful of colorful dust at you.")
+                    time.sleep(2)
+                    print("You accidentally breath in the dust.")
+                    time.sleep(2)
+                    print("You choke on the dust and die.")
+                    time.sleep(1)
+                    print("BAD ENDING 2/")
+#R R L R
+                elif forestmove4b=="right":
+                    print("You walk down the right path and see an enterance in front of you.")
+                    
+print("You walk towards the mountains and all of a sudden...")
+time.sleep(1)
+print(". . .")
+time.sleep(2)
+print("AN OGRE JUMPS OUT OF THE BUSHES!!")
+time.sleep(1)
+print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀")
+print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+print("⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀")
+print("⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀")
+print("⠀⠀⢀⡀⠀⢠⣿⡟⠿⣿⣧⣌⣉⣙⣛⣛⣋⣉⣡⣼⣿⠿⢻⣿⡄⠀⢀⡀⠀⠀")
+print("⠀⠀⢸⡿⢀⣾⣿⣿⣶⣌⠙⠿⣿⣿⣿⣿⣿⣿⠿⠋⣡⣶⣿⣿⣷⡀⢿⡇⠀⠀")
+print("⠀⠀⢸⠇⣾⣿⣿⣿⣿⣿⡆⢠⣄⠉⠛⠛⠉⣠⡄⢰⣿⣿⣿⣿⣿⣷⠸⡇⠀⠀")
+print("⠀⠀⠈⢠⣿⠟⢁⣤⣤⣄⣽⣄⠉⢠⣿⣿⡄⠉⣠⣯⣠⣤⣤⡈⠻⣿⡄⠁⠀⠀")
+print("⠀⠀⠀⣼⡏⢀⣿⣿⡿⣿⣿⡟⠀⠾⣿⣿⠷⠀⢻⣿⣿⢿⣿⣿⡀⢹⣧⠀⠀⠀")
+print("⠀⠀⠀⣿⣧⣀⣿⣿⣧⠈⠙⠻⢷⣦⣤⣤⣴⡶⠟⠋⠁⣼⣿⣿⣀⣼⣿⠀⠀⠀")
+print("⠀⠀⢸⣿⣿⣿⣿⣿⣿⣧⠈⠒⢀⣀⣤⣤⣀⡀⠒⠁⣼⣿⣿⣿⣿⣿⣿⡇⠀⠀")
+print("⠀⠀⠘⢿⣿⣿⣿⣿⣿⡟⢁⣴⣿⣿⣿⣿⣿⣿⣦⡈⢻⣿⣿⣿⣿⣿⡿⠃⠀⠀")
+print("⠀⠀⠀⠀⠈⠉⠛⠻⠿⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡾⠿⠟⠛⠉⠁⠀⠀⠀⠀")
+print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+time.sleep(2)
+print("[THE OGRE CHALLENGES YOU TO A BATTLE]")
+time.sleep(1)
+forestbattle=input("[ACCEPT?] [YES] [NO]")
+valid=["YES","NO"]
+while(forestbattle not in valid):
+    forestbattle=input("[ACCEPT? [YES] [NO] (YES/NO)")
+if forestbattle=="NO":
+    print("You try to flee, but the OGRE knocks a tree down in front of you. You can't escape, you HAVE TO FIGHT!")
+    time.sleep(2)
+    print("[THE TREE KNOCKS YOU BACK AND DEALS 10 DAMAGE]")
+    health=health-10
+    print(health)
