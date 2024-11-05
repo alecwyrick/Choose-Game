@@ -791,6 +791,41 @@ if forestmove1=="left":
 #L R
     elif forestmove2=="right":
         forestmove3=input("You walk down the left path. You see the path split into two. (left/right)")
+        valid=["left","right"]
+        while(forestmove3 not in valid):
+            forestmove3=input("So? Left or Right? (left/right)")
+        if forestmove3=="left":
+            forestmove4=input("You walk down the left path. You see the path split into two. (left/right)")
+            valid=["left","right"]
+            while(forestmove4 not in valid):
+                forestmove4=input("So? Left or Right? (left/right)")
+            if forestmove4=="left":
+                print("You walk down the left path.")
+                time.sleep(1)
+                print("You see the mountains in front of you.")
+            
+            elif forestmove=="right":
+                print("You walk down the right path.")
+                time.sleep(1)
+                print("You see the path continue towards the right.")
+                time.sleep(1)
+                print("You keep walking.")
+                time.sleep(1)
+                print("You talk another step, and the floor falls beneath you.")
+                time.sleep(1)
+                print("You were impaled on wooden stakes.")
+                print("BAD ENDING 2/")
+            
+        elif forestmove3=="right":
+            print("You walk down the right path. You see it comes to a dead end.")
+            time.sleep(2)
+            print("You look down and see a very vibrant purple, pink, and yellow flower.")
+            time.sleep(2)
+            print("The flower makes a hissing sound and a purple gas covers you.")
+            time.sleep(1)
+            print("Your vision gets blurry and you fall.")
+            time.sleep(1)
+            print("BAD ENDING 2/")
 #R
     elif forestmove1=="right":
         forestmove2=input("You walk down the left path. You see the path split into two. (left/right)")
