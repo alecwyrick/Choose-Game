@@ -761,7 +761,7 @@ elif skipdialogue1=="n":
         time.sleep(1)
 print("[HEADING TO THE FOREST]")
 time.sleep(3)
-print("[WARNING: SOME PATHS MAY LEAD TO DEATH AND YOU WILL HAVE TO RESTART COMPLETELY]")
+print("\n[WARNING: SOME PATHS MAY LEAD TO DEATH AND YOU WILL HAVE TO RESTART COMPLETELY]\n")
 #Town==>Forest
 print("You walk down the path and see the forest in front of you.")
 print("The path splits into two.")
@@ -783,8 +783,8 @@ if forestmove1=="left":
         time.sleep(2)
         print("You look down and see a snake that has bitten your leg.")
         time.sleep(2)
-        print("Your vision fades and you run out of breath.")
-        time.sleep(1)
+        print("Your vision fades as you run out of breath.")
+        time.sleep(2)
         print("You fall and die.")
         time.sleep(1)
         print("BAD ENDING 2/")
@@ -812,7 +812,7 @@ if forestmove1=="left":
                 print("You keep walking.")
                 time.sleep(1)
                 print("You talk another step, and the floor falls beneath you.")
-                time.sleep(1)
+                time.sleep(2)
                 print("You were impaled on wooden stakes.")
                 print("BAD ENDING 2/")
             
@@ -820,11 +820,11 @@ if forestmove1=="left":
             print("You walk down the right path. You see it comes to a dead end.")
             time.sleep(2)
             print("You look down and see a very vibrant purple, pink, and yellow flower.")
-            time.sleep(2)
+            time.sleep(3)
             print("The flower makes a hissing sound and a purple gas covers you.")
-            time.sleep(1)
+            time.sleep(2)
             print("Your vision gets blurry and you fall.")
-            time.sleep(1)
+            time.sleep(2)
             print("BAD ENDING 2/")
 #R
     elif forestmove1=="right":
