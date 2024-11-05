@@ -790,21 +790,42 @@ if forestmove1=="left":
         print("BAD ENDING 2/")
 #L R
     elif forestmove2=="right":
-        forestmove3=input("You walk down the left path. You see the path split into two. (left/right)")
+        forestmove3=input("You walk down the right path. You see the path split into two. (left/right)")
         valid=["left","right"]
         while(forestmove3 not in valid):
             forestmove3=input("So? Left or Right? (left/right)")
+#L R L
         if forestmove3=="left":
             forestmove4=input("You walk down the left path. You see the path split into two. (left/right)")
             valid=["left","right"]
             while(forestmove4 not in valid):
                 forestmove4=input("So? Left or Right? (left/right)")
+#L R L L
             if forestmove4=="left":
                 print("You walk down the left path.")
                 time.sleep(1)
                 print("You see the mountains in front of you.")
-            
-            elif forestmove=="right":
+                time.sleep(2)
+                print("                       _")
+                print("                     /#\ ")
+                print("                    /###\     /\ ")
+                print("                   /  ###\   /##\  /\ ")
+                print("                  /      #\ /####\/##\ ")
+                print("                 /  /      /   # /  ##\             _       /\ ")
+                print("               // //  /\  /    _/  /  #\ _         /#\    _/##\    /\ ")
+                print("              // /   /  \     /   /    #\ \      _/###\_ /   ##\__/ _\ ")
+                print("             /  \   / .. \   / /   _   { \ \   _/       / //    /    \\")
+                print("     /\     /    /\  ...  \_/   / / \   } \ | /  /\  \ /  _    /  /    \ /\ ")
+                print("  _ /  \  /// / .\  ..%:.  /... /\ . \ {:  \\   /. \     / \  /   ___   /  \ ")
+                print(" /.\ .\.\// \/... \.::::..... _/..\ ..\:|:. .  / .. \\  /.. \    /...\ /  \ \ ")
+                print("/...\.../..:.\. ..:::::::..:..... . ...\{:... / %... \\/..%. \  /./:..\__   \ ")
+                print(" .:..\:..:::....:::;;;;;;::::::::.:::::.\}.....::%.:. \ .:::. \/.%:::.:..\ ")
+                print("::::...:::;;:::::;;;;;;;;;;;;;;:::::;;::{:::::::;;;:..  .:;:... ::;;::::..")
+                print(";;;;:::;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;];;;;;;;;;;::::::;;;;:.::;;;;;;;;:..")
+                time.sleep(3)
+                print("")
+#L R L R            
+            elif forestmove4=="right":
                 print("You walk down the right path.")
                 time.sleep(1)
                 print("You see the path continue towards the right.")
@@ -815,7 +836,7 @@ if forestmove1=="left":
                 time.sleep(2)
                 print("You were impaled on wooden stakes.")
                 print("BAD ENDING 2/")
-            
+#L R R            
         elif forestmove3=="right":
             print("You walk down the right path. You see it comes to a dead end.")
             time.sleep(2)
@@ -828,4 +849,38 @@ if forestmove1=="left":
             print("BAD ENDING 2/")
 #R
     elif forestmove1=="right":
-        forestmove2=input("You walk down the left path. You see the path split into two. (left/right)")
+        forestmove2b=input("You walk down the right path. You see the path split into two. (left/right)")
+        valid=["left","right"]
+        while(forestmove2b not in valid):
+            forestmove2b=input("So? Left or Right? (left/right)")
+#R L
+        if forestmove2b=="left":
+            print("You walk down the left path.")
+            time.sleep(1)
+            print("You keep walking until you trip on a tripwire.")
+            time.sleep(1)
+            print("The wire activates a mechanism which makes a tree slam into you.")
+            time.sleep(2)
+            print("You're gasping for breath as you rib cage has just been smashed in.")
+            time.sleep(2)
+            print("You see the life saving pill 3 feet away from you.")
+            print("A little pig eats it.")
+            time.sleep(2)
+            print("Your vision becomes bloody.")
+            print("BAD ENDING 2/")
+#R R
+        elif forestmove2b=="right":
+            forestmove3b=input("You walk down the right path. You see the path split into two. (left/right)")
+            valid=["left","right"]
+            while(forestmove3b not in valid):
+                forestmove3b=input("So? Left or Right? (left/right)")
+#R R R
+            if forestmove3b=="right":
+                print("You walk down the right path.")
+                time.sleep(2)
+                print("You spontaneously combust.")
+                print("BAD ENDING 2/")
+                print("I ran out of ideas.")
+#R R L
+            elif forestmove3b=="left":
+                forestmove4b=input("You walk down the left path. You see the path split into two. (left/right)")
