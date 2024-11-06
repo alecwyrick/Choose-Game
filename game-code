@@ -848,58 +848,58 @@ if forestmove1=="left":
             time.sleep(2)
             print("BAD ENDING 2/")
 #R
-    elif forestmove1=="right":
-        forestmove2b=input("You walk down the right path. You see the path split into two. (left/right)")
-        valid=["left","right"]
-        while(forestmove2b not in valid):
-            forestmove2b=input("So? Left or Right? (left/right)")
+elif forestmove1=="right":
+    forestmove2b=input("You walk down the right path. You see the path split into two. (left/right)")
+    valid=["left","right"]
+    while(forestmove2b not in valid):
+        forestmove2b=input("So? Left or Right? (left/right)")
 #R L
-        if forestmove2b=="left":
-            print("You walk down the left path.")
-            time.sleep(1)
-            print("You keep walking until you trip on a tripwire.")
-            time.sleep(1)
-            print("The wire activates a mechanism which makes a tree slam into you.")
-            time.sleep(2)
-            print("You're gasping for breath as you rib cage has just been smashed in.")
-            time.sleep(2)
-            print("You see the life saving pill 3 feet away from you.")
-            print("A little pig eats it.")
-            time.sleep(2)
-            print("Your vision becomes bloody.")
-            print("BAD ENDING 2/")
+    if forestmove2b=="left":
+        print("You walk down the left path.")
+        time.sleep(1)
+        print("You keep walking until you trip on a tripwire.")
+        time.sleep(1)
+        print("The wire activates a mechanism which makes a tree slam into you.")
+        time.sleep(2)
+        print("You're gasping for breath as you rib cage has just been smashed in.")
+        time.sleep(2)
+        print("You see the life saving pill 3 feet away from you.")
+        print("A little pig eats it.")
+        time.sleep(2)
+        print("Your vision becomes bloody.")
+        print("BAD ENDING 2/")
 #R R
-        elif forestmove2b=="right":
-            forestmove3b=input("You walk down the right path. You see the path split into two. (left/right)")
-            valid=["left","right"]
-            while(forestmove3b not in valid):
-                forestmove3b=input("So? Left or Right? (left/right)")
+    elif forestmove2b=="right":
+        forestmove3b=input("You walk down the right path. You see the path split into two. (left/right)")
+        valid=["left","right"]
+        while(forestmove3b not in valid):
+            forestmove3b=input("So? Left or Right? (left/right)")
 #R R R
-            if forestmove3b=="right":
-                print("You walk down the right path.")
-                time.sleep(2)
-                print("You spontaneously combust.")
-                print("BAD ENDING 2/")
-                print("I ran out of ideas.")
+        if forestmove3b=="right":
+            print("You walk down the right path.")
+            time.sleep(2)
+            print("You spontaneously combust.")
+            print("BAD ENDING 2/")
+            print("I ran out of ideas.")
 #R R L
-            elif forestmove3b=="left":
-                forestmove4b=input("You walk down the left path. You see the path split into two. (left/right)")
-                valid=["left","right"]
-                while(forestmove4b not in valid):
-                    forestmove4b=input("So? Left or Right? (left/right)")
+        elif forestmove3b=="left":
+            forestmove4b=input("You walk down the left path. You see the path split into two. (left/right)")
+            valid=["left","right"]
+            while(forestmove4b not in valid):
+                forestmove4b=input("So? Left or Right? (left/right)")
 #R R L L
-                if forestmove4b=="left":
-                    print("You walk down the left path.")
-                    time.sleep(2)
-                    print("You see a witch and she throws a handful of colorful dust at you.")
-                    time.sleep(2)
-                    print("You accidentally breath in the dust.")
-                    time.sleep(2)
-                    print("You choke on the dust and die.")
-                    time.sleep(1)
-                    print("BAD ENDING 2/")
+            if forestmove4b=="left":
+                print("You walk down the left path.")
+                time.sleep(2)
+                print("You see a witch and she throws a handful of colorful dust at you.")
+                time.sleep(2)
+                print("You accidentally breath in the dust.")
+                time.sleep(2)
+                print("You choke on the dust and die.")
+                time.sleep(1)
+                print("BAD ENDING 2/")
 #R R L R
-                elif forestmove4b=="right":
+            elif forestmove4b=="right":
                     print("You walk down the right path and see an enterance in front of you.")
                     
 print("You walk towards the mountains and all of a sudden...")
@@ -935,4 +935,6 @@ if forestbattle=="NO":
     time.sleep(2)
     print("[THE TREE KNOCKS YOU BACK AND DEALS 10 DAMAGE]")
     health=health-10
-    print(health)
+    print(f"[YOU NOW HAVE {health} HEALTH]")
+elif forestbattle=="YES":
+    print("")
