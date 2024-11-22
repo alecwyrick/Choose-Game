@@ -931,6 +931,11 @@ print("⠀⠀⠀⠀⠈⠉⠛⠻⠿⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡾⠿⠟⠛�
 print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
 time.sleep(2)
 print("[THE OGRE CHALLENGES YOU TO A BATTLE]")
+ogrehealth=250
+time.sleep(1)
+print("[THE OGRE HAS 250 HEALTH]")
+time.sleep(1)
+print(f"[YOU HAVE {health} HEALTH]")
 time.sleep(1)
 forestbattle=input("[ACCEPT?] [YES] [NO]")
 valid=["YES","NO"]
@@ -961,6 +966,9 @@ if dweapon=="mighty sword":
     print("The ogre swings again.")
     time.sleep(1)
     print("You slide under his club and go for its leg.")
+    ogrehealth=ogrehealth-damage
+    time.sleep(1)
+    print(f"[THE OGRE NOW HAS {ogrehealth} HEALTH]")
     time.sleep(1)
     print("The ogre falls back in pain.")
     time.sleep(1)
@@ -970,4 +978,41 @@ if dweapon=="mighty sword":
     print("You take too long to back up and it hits you back.")
     health=health-10
     time.sleep(1)
-    print(f)
+    print(f"[YOU NOW HAVE {health} HEALTH")
+    time.sleep(1)
+    print("You stand up and jump on top of the ogre with your sword extended toward its heart.")
+    time.sleep(2)
+    print("The ogre pushes you aside before you're able to fully impale its chest.")
+    health=health-5
+    ogrehealth=ogrehealth-15
+    time.sleep(1)
+    print(f"[THE OGRE NOW HAS {ogrehealth} HEALTH]")
+    time.sleep(1)
+    print(f"[YOU NOW HAVE {health} HEALTH")
+    time.sleep(1)
+    print("You see the ogre stand back up and look at you with rage.")
+    time.sleep(2)
+    print("Your choice. What attack do you do now?")
+    ogrefightsword=input("Do you throw your sword? Run in for its other leg? Go for the heart? (throw/leg/heart)")
+    valid=["throw","leg","heart"]
+    while(ogrefightsword not in valid):
+        print("So?")
+        ogrefightsword=input("Do you throw your sword? Run in for its other leg? Go for the heart? (throw/leg/heart)")
+    if ogrefightsword=="throw":
+        print("You look at your hand holding your sword.")
+        time.sleep(1)
+        print("You wind your arm back and launch your sword at the ogre.")
+        time.sleep(1)
+        print(". . .")
+        time.sleep(2)
+        print("Your sword is soaring through the air.")
+        time.sleep(1)
+        print("It hits the ogre's eye.")
+        time.sleep(1)
+        print("[MASSIVE CRITCAL HIT!!]")
+        time.sleep(1)
+        print("[DEALT 70 DAMAGE]")
+        time.sleep(1)
+        
+        
+        
