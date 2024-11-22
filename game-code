@@ -788,6 +788,7 @@ if forestmove1=="left":
         print("You fall and die.")
         time.sleep(1)
         print("BAD ENDING 2/")
+        exit()
 #L R
     elif forestmove2=="right":
         forestmove3=input("You walk down the right path. You see the path split into two. (left/right)")
@@ -836,6 +837,7 @@ if forestmove1=="left":
                 time.sleep(2)
                 print("You were impaled on wooden stakes.")
                 print("BAD ENDING 2/")
+                exit()
 #L R R            
         elif forestmove3=="right":
             print("You walk down the right path. You see it comes to a dead end.")
@@ -847,6 +849,7 @@ if forestmove1=="left":
             print("Your vision gets blurry and you fall.")
             time.sleep(2)
             print("BAD ENDING 2/")
+            exit()
 #R
 elif forestmove1=="right":
     forestmove2b=input("You walk down the right path. You see the path split into two. (left/right)")
@@ -868,6 +871,7 @@ elif forestmove1=="right":
         time.sleep(2)
         print("Your vision becomes bloody.")
         print("BAD ENDING 2/")
+        exit()
 #R R
     elif forestmove2b=="right":
         forestmove3b=input("You walk down the right path. You see the path split into two. (left/right)")
@@ -881,6 +885,7 @@ elif forestmove1=="right":
             print("You spontaneously combust.")
             print("BAD ENDING 2/")
             print("I ran out of ideas.")
+            exit()
 #R R L
         elif forestmove3b=="left":
             forestmove4b=input("You walk down the left path. You see the path split into two. (left/right)")
@@ -898,6 +903,7 @@ elif forestmove1=="right":
                 print("You choke on the dust and die.")
                 time.sleep(1)
                 print("BAD ENDING 2/")
+                exit()
 #R R L R
             elif forestmove4b=="right":
                     print("You walk down the right path and see an enterance in front of you.")
@@ -937,4 +943,31 @@ if forestbattle=="NO":
     health=health-10
     print(f"[YOU NOW HAVE {health} HEALTH]")
 elif forestbattle=="YES":
-    print("")
+    print("You tense up.")
+    
+print(f"You pull out your {dweapon}.")
+time.sleep(1)
+print("You look at the ogre twice your height.")
+time.sleep(1)
+print("The ogre swings his club at you.")
+time.sleep(1)
+print("You jump back at the last second.")
+time.sleep(1)
+print("You're about 3 yards away from the ogre.")
+
+if dweapon=="mighty sword":
+    print("You run foward with your sword.")
+    time.sleep(1)
+    print("The ogre swings again.")
+    time.sleep(1)
+    print("You slide under his club and go for its leg.")
+    time.sleep(1)
+    print("The ogre falls back in pain.")
+    time.sleep(1)
+    print("Its finger falls towards you.")
+    time.sleep(1)
+    print("It's too late.")
+    print("You take too long to back up and it hits you back.")
+    health=health-10
+    time.sleep(1)
+    print(f)
