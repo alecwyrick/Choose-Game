@@ -29,7 +29,9 @@ if start=="y":
     gold=0
     health=100
     damage=5
-    hascrystal="False"
+    hascrystal1="False"
+    hascrystal2="False"
+    hascrystal3="False"
     dweapon="undefined"
     reviveability="False"
     easteregg1="False"
@@ -720,8 +722,8 @@ valid=["y","n"]
 while(skipdialogue1 not in valid):
     skipdialogue1=input("[SKIP DIALOGUE?] (y/n)")
 if skipdialogue1=="y":
-    print("[~~LOADING~~]")
-    time.sleep(5)
+    print("...")
+    time.sleep(1)
 elif skipdialogue1=="n":
     print(f"\n'Ah! Adventurer! {name}! Finally, you are fully equipped to start this journey.'\n")
     time.sleep(1)
@@ -807,23 +809,6 @@ if forestmove1=="left":
                 time.sleep(1)
                 print("You see the mountains in front of you.")
                 time.sleep(2)
-                print("                       _")
-                print("                     /#\ ")
-                print("                    /###\     /\ ")
-                print("                   /  ###\   /##\  /\ ")
-                print("                  /      #\ /####\/##\ ")
-                print("                 /  /      /   # /  ##\             _       /\ ")
-                print("               // //  /\  /    _/  /  #\ _         /#\    _/##\    /\ ")
-                print("              // /   /  \     /   /    #\ \      _/###\_ /   ##\__/ _\ ")
-                print("             /  \   / .. \   / /   _   { \ \   _/       / //    /    \\")
-                print("     /\     /    /\  ...  \_/   / / \   } \ | /  /\  \ /  _    /  /    \ /\ ")
-                print("  _ /  \  /// / .\  ..%:.  /... /\ . \ {:  \\   /. \     / \  /   ___   /  \ ")
-                print(" /.\ .\.\// \/... \.::::..... _/..\ ..\:|:. .  / .. \\  /.. \    /...\ /  \ \ ")
-                print("/...\.../..:.\. ..:::::::..:..... . ...\{:... / %... \\/..%. \  /./:..\__   \ ")
-                print(" .:..\:..:::....:::;;;;;;::::::::.:::::.\}.....::%.:. \ .:::. \/.%:::.:..\ ")
-                print("::::...:::;;:::::;;;;;;;;;;;;;;:::::;;::{:::::::;;;:..  .:;:... ::;;::::..")
-                print(";;;;:::;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;];;;;;;;;;;::::::;;;;:.::;;;;;;;;:..")
-                time.sleep(3)
                 
 #L R L R            
             elif forestmove4=="right":
@@ -907,6 +892,10 @@ elif forestmove1=="right":
 #R R L R
             elif forestmove4b=="right":
                     print("You walk down the right path and see an enterance in front of you.")
+                    time.sleep(2)
+                    print("You look around and see it is just a large stone structure")
+                    time.sleep(2)
+                    print("You walk in and see that there are multiple ways to go.")
                     
 print("You walk towards the mountains and all of a sudden...")
 time.sleep(1)
