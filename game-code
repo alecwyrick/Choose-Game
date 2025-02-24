@@ -35,6 +35,7 @@ if start=="y":
     dweapon="undefined"
     reviveability="False"
     easteregg1="False"
+    easteregg2="False"
 elif start=="n":
     print("Another time then.")
     exit()
@@ -70,7 +71,7 @@ elif move1=="Basement":
     print("\n'Wait, the furnace is off.' You open the door and see a purple crystal lying on floor.\n")
     time.sleep(1)
     print("You pick it up, put it in your pocket, and head out the door")
-    hascrystal="True"
+    hascrystal1="True"
 #==>Town
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("\n[You walk into the town of ERENDORF]\n")
@@ -890,12 +891,30 @@ elif forestmove1=="right":
                 print("BAD ENDING 2/")
                 exit()
 #R R L R
+            # L = Left | R = Right | F = Foward
+            #escape = L R R F F L F L R L L R R F F
+            #escape + easteregg = F R R F
             elif forestmove4b=="right":
                     print("You walk down the right path and see an enterance in front of you.")
                     time.sleep(2)
                     print("You look around and see it is just a large stone structure")
                     time.sleep(2)
                     print("You walk in and see that there are multiple ways to go.")
+                    time.sleep(2)
+                    mazemove1=input("The left path and right paths are open, and the path in front of you has rubble blocking the way. Which way do you go? (left/right)")
+                    valid=["left","right","foward","up"]
+                    while(mazemove1 not in valid):
+                        mazemove1=input("Which way do you go? (left/right)")
+                    if mazemove1=="up":
+                        print("You look up and see a glimmer coming from something poking out of the celing.")
+                        time.sleep(1)
+                        print("You reach up and grab it. You look and you see you grabbed a blue crystal")
+                        hascrystal2="True"
+                        if hascrystal1=="True":
+                            print("This blue crystal can join your purple crystal in your pocket")
+                        else:
+                            print("")
+                    mazemove
                     
 print("You walk towards the mountains and all of a sudden...")
 time.sleep(1)
