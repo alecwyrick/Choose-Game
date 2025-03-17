@@ -897,15 +897,20 @@ elif forestmove1=="right":
             elif forestmove4b=="right":
                     print("You walk down the right path and see an enterance in front of you.")
                     time.sleep(2)
-                    print("You look around and see it is just a large stone structure")
+                    print("You see a paper on the ground.")
+                    time.sleep(1)
+                    print("You pick it up and examine it. It says 'L R R F F L F L R L L R R F F' on the front and '4-2-3-4' on the back")
+                    time.sleep(3)
+                    print("You look around and see a large stone structure")
                     time.sleep(2)
                     print("You walk in and see that there are multiple ways to go.")
                     time.sleep(2)
-                    mazemove1=input("The left path and right paths are open, and the path in front of you has rubble blocking the way. Which way do you go? (left/right)")
+                    mazemove1=input("The left path and right paths are open, and the path in front of you has rubble in the way. Which way do you go? (left/right)")
                     valid=["left","right","foward","up"]
                     while(mazemove1 not in valid):
                         mazemove1=input("Which way do you go? (left/right)")
-                    if mazemove1=="up":
+#Up
+                    while mazemove1=="up":
                         print("You look up and see a glimmer coming from something poking out of the celing.")
                         time.sleep(1)
                         print("You reach up and grab it. You look and you see you grabbed a blue crystal")
@@ -914,7 +919,70 @@ elif forestmove1=="right":
                             print("This blue crystal can join your purple crystal in your pocket")
                         else:
                             print("")
-                    mazemove
+                        mazemove1=input("Which way do you go? (left/right)")
+#R
+                    if mazemove1=="right":
+                        print("You confidently walk to the right and you fall into a deep pit")
+                        time.sleep(2)
+                        print("You dead.")
+                        print("BAD ENDING 2/")
+                        exit()
+#F
+                    elif mazemove1=="forward":
+                        print("You walk foward and look at the rubble in front of you.")
+                        time.sleep(2)
+                        print("You clear the rubble out of the way and walk forward.")
+                        time.sleep(2)
+                        mazemoveEE1=input("You now see three paths are open in front of you. (left/right/forward)")
+                        valid=["left","right","forward"]
+                        while(mazemoveEE1 not in valid):
+                            mazemoveEE1=input("You now see three paths are open in front of you. (left/right/forward)")
+#F L
+                        if mazemoveEE1=="left":
+                            print("You walk to the left and the roof collapses onto you.")
+                            time.sleep(2)
+                            print("You are dead.")
+                            print("BAD ENDING 2/")
+                            exit()
+#F F
+                        elif mazemoveEE1=="foward":
+                            print("You walk forward.")
+                            time.sleep(3)
+                            print("You activate a tripwire and a poison tipped arrow pierces your neck.")
+                            time.sleep(2)
+                            print("Dead.")
+                            print("BAD ENDING 2/")
+                            exit()
+#F R
+                        elif mazemoveEE1=="right":
+                            print("You walk to the right.")
+                            time.sleep(2)
+                            mazemoveEE2=input("You see two paths that are open. (right/forward)")
+                            valid=["right","forward"]
+                            while(mazemoveEE2 not in valid):
+                                mazemoveEE2=input("You see two paths that are open. (right/forward)")
+#F R F
+                            if mazemoveEE2=="foward":
+                                print("You walk forwards.")
+                                time.sleep(2)
+                                print("You walk into a long hallway.")
+                                time.sleep(2)
+                                print("You look back and see where you entered from.")
+                                time.sleep(3)
+                                print("The walls are closing in.")
+                                time.sleep(2)
+                                print("You try and run back, but it's too late.")
+                                time.sleep(2)
+                                print("BAD ENDING 2/")
+                                exit()
+#F R R
+                            elif mazemoveEE2=="right":
+                                print("You walk to the right again.")
+                                time.sleep(2)
+                                print("You see there are three paths but there's a deep pit to your right. (forward/left)")
+                                
+                                
+#----------------BREAK-BETWEEN-MAZE-+-MOUNTAINS------------------------#
                     
 print("You walk towards the mountains and all of a sudden...")
 time.sleep(1)
