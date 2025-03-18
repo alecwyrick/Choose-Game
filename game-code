@@ -87,9 +87,9 @@ if townmove1=="blacksmith":
     print("\n'Hello there,' says the blacksmith")
     time.sleep(1)
     print("'Are ye looking to buy some steel? Some weapons? Armor?'\n")
-    if hascrystal=="False":
+    if hascrystal1=="False":
         print("Looking at your empty pockets, you say, 'Sorry, I dont have any gold on me'")
-    elif hascrystal=="True":
+    elif hascrystal1=="True":
         print("Looking at the only thing you have in your pocket, the crystal, you say, 'Sorry, I dont have any gold on me'")
     time.sleep(2)
     print("\n'Awe don't worry mate... uhh.. first one's on the house.'")
@@ -330,10 +330,10 @@ elif townmove1=="tavern":
         time.sleep(1)
         print("'Are ye looking to buy some steel? Some weapons? Armor?'\n")
         time.sleep(1)
-        if hascrystal=="False":
+        if hascrystal1=="False":
            print("Looking at your empty pockets, you say, 'Sorry, I dont have any gold on me'")
            time.sleep(1)
-        elif hascrystal=="True":
+        elif hascrystal1=="True":
            print("Looking at the only thing you have in your pocket, the crystal, you say, 'Sorry, I dont have any gold on me'")
            time.sleep(2)
         print("\n'Awe don't worry mate... uhh.. first one's on the house.'")
@@ -480,10 +480,10 @@ elif townmove1=="medic":
         time.sleep(1)
         print("'Are ye looking to buy some steel? Some weapons? Armor?'\n")
         time.sleep(1)
-        if hascrystal=="False":
+        if hascrystal1=="False":
             print("Looking at your empty pockets, you say, 'Sorry, I dont have any gold on me'")
             time.sleep(1)
-        elif hascrystal=="True":
+        elif hascrystal1=="True":
             print("Looking at the only thing you have in your pocket, the crystal, you say, 'Sorry, I dont have any gold on me'")
         time.sleep(2)
         print("\n'Awe don't worry mate... uhh.. first one's on the house.'")
@@ -605,9 +605,9 @@ elif townmove1=="medic":
         time.sleep(1)
         print("'Are ye looking to buy some steel? Some weapons? Armor?'\n")
         time.sleep(1)
-        if hascrystal=="False":
+        if hascrystal1=="False":
            print("Looking at your empty pockets, you say, 'Sorry, I dont have any gold on me'")
-        elif hascrystal=="True":
+        elif hascrystal1=="True":
            print("Looking at the only thing you have in your pocket, the crystal, you say, 'Sorry, I dont have any gold on me'")
         print("\n'Awe don't worry mate... uhh.. first one's on the house.'")
         print("'Here.'\n")
@@ -906,7 +906,7 @@ elif forestmove1=="right":
                     print("You walk in and see that there are multiple ways to go.")
                     time.sleep(2)
                     mazemove1=input("The left path and right paths are open, and the path in front of you has rubble in the way. Which way do you go? (left/right)")
-                    valid=["left","right","foward","up"]
+                    valid=["left","right","forward","up"]
                     while(mazemove1 not in valid):
                         mazemove1=input("Which way do you go? (left/right)")
 #Up
@@ -1054,7 +1054,7 @@ if dweapon=="mighty sword":
     print("You take too long to back up and it hits you back.")
     health=health-10
     time.sleep(1)
-    print(f"[YOU NOW HAVE {health} HEALTH")
+    print(f"[YOU NOW HAVE {health} HEALTH]")
     time.sleep(1)
     print("You stand up and jump on top of the ogre with your sword extended toward its heart.")
     time.sleep(2)
