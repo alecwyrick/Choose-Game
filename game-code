@@ -899,7 +899,7 @@ elif forestmove1=="right":
                     time.sleep(2)
                     print("You see a paper on the ground.")
                     time.sleep(1)
-                    print("You pick it up and examine it. It says 'L R R F F L F L R L L R R F F' on the front and '4-2-3-4' on the back")
+                    print("You pick it up and examine it. It says 'L R R F F L F L R L L R R F F' on the front and '4-2-3-4??' on the back")
                     time.sleep(3)
                     print("You look around and see a large stone structure")
                     time.sleep(2)
@@ -918,7 +918,7 @@ elif forestmove1=="right":
                         if hascrystal1=="True":
                             print("This blue crystal can join your purple crystal in your pocket")
                         else:
-                            print("")
+                            print("You put the blue crystal in your pocket")
                         mazemove1=input("Which way do you go? (left/right)")
 #R
                     if mazemove1=="right":
@@ -979,116 +979,170 @@ elif forestmove1=="right":
                             elif mazemoveEE2=="right":
                                 print("You walk to the right again.")
                                 time.sleep(2)
-                                print("You see there are three paths but there's a deep pit to your right. (forward/left)")
+                                mazemoveEE3=input("You see there are three paths but there's a deep pit to your right. (forward/left)")
+                                valid=["forward","left"]
+                                while(mazemoveEE3 not in valid):
+                                    mazemoveEE3=input("Go forward or left?")
+#F R R L
+                                if mazemoveEE3=="left":
+                                    print("You take a couple steps to the left.")
+                                    time.sleep(1)
+                                    print("The floor crumbles beneath your feet and you fall.")
+                                    time.sleep(2)
+                                    print("Impaled on wooden spikes.")
+                                    print("BAD ENDING 2/")
+                                    exit()
                                 
+#F R R F - Easter Egg
+                                elif mazemoveEE3=="forward":
+                                    print("You walk forward.")
+                                    time.sleep(1)
+                                    print("The door closes behind you.")
+                                    time.sleep(2)
+                                    print("You're trapped in the dark.")
+                                    time.sleep(1)
+                                    print("You feel around for anything you can find...")
+                                    time.sleep(1)
+                                    print("You find a small trapdoor.")
+                                    time.sleep(1)
+                                    print("You open it and go through.")
+                                    time.sleep(2)
+                                    print("You find yourself wandering through the maze's sublevel until you find a door.")
+                                    time.sleep(2)
+                                    print("You open it revealing a massive cavern in front of you.")
+                                    time.sleep(2)
+                                    print("You look at a rock next to you and see a pink crystal.")
+                                    takecrystal=input("Take the pink crystal? y/n")
+                                    valid=["y","n"]
+                                    while(takecrystal not in valid):
+                                        takecrystal=input("Take pink crystal? y/n")
+                                    
+                                    if takecrystal=="y":
+                                        print("You lodge the cystal out of the stone.")
+                                        time.sleep(1)
+                                        if hascrystal1 or hascrystal2=="True":
+                                            print("The pink crystal joins the other in your pocket")
+                                            
+                                        elif hascrystal1 and hascrystal2=="True":
+                                            print("The pink crystal joins the other two in your pocket")
+                                            
+                                        else:
+                                            print("You put the crystal in your pocket.")
+                                        
+                                        hascrystal3="True"
+                                    
+                                    elif takecrystal=="n":
+                                        print("You walk right on by it.")
+                                            
                                 
 #----------------BREAK-BETWEEN-MAZE-+-MOUNTAINS------------------------#
                     
-print("You walk towards the mountains and all of a sudden...")
-time.sleep(1)
-print(". . .")
-time.sleep(2)
-print("AN OGRE JUMPS OUT OF THE BUSHES!!")
-time.sleep(1)
-print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀")
-print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-print("⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀")
-print("⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀")
-print("⠀⠀⢀⡀⠀⢠⣿⡟⠿⣿⣧⣌⣉⣙⣛⣛⣋⣉⣡⣼⣿⠿⢻⣿⡄⠀⢀⡀⠀⠀")
-print("⠀⠀⢸⡿⢀⣾⣿⣿⣶⣌⠙⠿⣿⣿⣿⣿⣿⣿⠿⠋⣡⣶⣿⣿⣷⡀⢿⡇⠀⠀")
-print("⠀⠀⢸⠇⣾⣿⣿⣿⣿⣿⡆⢠⣄⠉⠛⠛⠉⣠⡄⢰⣿⣿⣿⣿⣿⣷⠸⡇⠀⠀")
-print("⠀⠀⠈⢠⣿⠟⢁⣤⣤⣄⣽⣄⠉⢠⣿⣿⡄⠉⣠⣯⣠⣤⣤⡈⠻⣿⡄⠁⠀⠀")
-print("⠀⠀⠀⣼⡏⢀⣿⣿⡿⣿⣿⡟⠀⠾⣿⣿⠷⠀⢻⣿⣿⢿⣿⣿⡀⢹⣧⠀⠀⠀")
-print("⠀⠀⠀⣿⣧⣀⣿⣿⣧⠈⠙⠻⢷⣦⣤⣤⣴⡶⠟⠋⠁⣼⣿⣿⣀⣼⣿⠀⠀⠀")
-print("⠀⠀⢸⣿⣿⣿⣿⣿⣿⣧⠈⠒⢀⣀⣤⣤⣀⡀⠒⠁⣼⣿⣿⣿⣿⣿⣿⡇⠀⠀")
-print("⠀⠀⠘⢿⣿⣿⣿⣿⣿⡟⢁⣴⣿⣿⣿⣿⣿⣿⣦⡈⢻⣿⣿⣿⣿⣿⡿⠃⠀⠀")
-print("⠀⠀⠀⠀⠈⠉⠛⠻⠿⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡾⠿⠟⠛⠉⠁⠀⠀⠀⠀")
-print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
-time.sleep(2)
-print("[THE OGRE CHALLENGES YOU TO A BATTLE]")
-ogrehealth=250
-time.sleep(1)
-print("[THE OGRE HAS 250 HEALTH]")
-time.sleep(1)
-print(f"[YOU HAVE {health} HEALTH]")
-time.sleep(1)
-forestbattle=input("[ACCEPT?] [YES] [NO]")
-valid=["YES","NO"]
-while(forestbattle not in valid):
-    forestbattle=input("[ACCEPT? [YES] [NO] (YES/NO)")
-if forestbattle=="NO":
-    print("You try to flee, but the OGRE knocks a tree down in front of you. You can't escape, you HAVE TO FIGHT!")
+    print("You walk towards the mountains and all of a sudden...")
+    time.sleep(1)
+    print(". . .")
     time.sleep(2)
-    print("[THE TREE KNOCKS YOU BACK AND DEALS 10 DAMAGE]")
-    health=health-10
-    print(f"[YOU NOW HAVE {health} HEALTH]")
-elif forestbattle=="YES":
-    print("You tense up.")
-    
-print(f"You pull out your {dweapon}.")
-time.sleep(1)
-print("You look at the ogre twice your height.")
-time.sleep(1)
-print("The ogre swings his club at you.")
-time.sleep(1)
-print("You jump back at the last second.")
-time.sleep(1)
-print("You're about 3 yards away from the ogre.")
-
-if dweapon=="mighty sword":
-    print("You run foward with your sword.")
+    print("AN OGRE JUMPS OUT OF THE BUSHES!!")
     time.sleep(1)
-    print("The ogre swings again.")
-    time.sleep(1)
-    print("You slide under his club and go for its leg.")
-    ogrehealth=ogrehealth-damage
-    time.sleep(1)
-    print(f"[THE OGRE NOW HAS {ogrehealth} HEALTH]")
-    time.sleep(1)
-    print("The ogre falls back in pain.")
-    time.sleep(1)
-    print("Its finger falls towards you.")
-    time.sleep(1)
-    print("It's too late.")
-    print("You take too long to back up and it hits you back.")
-    health=health-10
-    time.sleep(1)
-    print(f"[YOU NOW HAVE {health} HEALTH]")
-    time.sleep(1)
-    print("You stand up and jump on top of the ogre with your sword extended toward its heart.")
+    print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀")
+    print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+    print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀")
+    print("⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀")
+    print("⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀")
+    print("⠀⠀⢀⡀⠀⢠⣿⡟⠿⣿⣧⣌⣉⣙⣛⣛⣋⣉⣡⣼⣿⠿⢻⣿⡄⠀⢀⡀⠀⠀")
+    print("⠀⠀⢸⡿⢀⣾⣿⣿⣶⣌⠙⠿⣿⣿⣿⣿⣿⣿⠿⠋⣡⣶⣿⣿⣷⡀⢿⡇⠀⠀")
+    print("⠀⠀⢸⠇⣾⣿⣿⣿⣿⣿⡆⢠⣄⠉⠛⠛⠉⣠⡄⢰⣿⣿⣿⣿⣿⣷⠸⡇⠀⠀")
+    print("⠀⠀⠈⢠⣿⠟⢁⣤⣤⣄⣽⣄⠉⢠⣿⣿⡄⠉⣠⣯⣠⣤⣤⡈⠻⣿⡄⠁⠀⠀")
+    print("⠀⠀⠀⣼⡏⢀⣿⣿⡿⣿⣿⡟⠀⠾⣿⣿⠷⠀⢻⣿⣿⢿⣿⣿⡀⢹⣧⠀⠀⠀")
+    print("⠀⠀⠀⣿⣧⣀⣿⣿⣧⠈⠙⠻⢷⣦⣤⣤⣴⡶⠟⠋⠁⣼⣿⣿⣀⣼⣿⠀⠀⠀")
+    print("⠀⠀⢸⣿⣿⣿⣿⣿⣿⣧⠈⠒⢀⣀⣤⣤⣀⡀⠒⠁⣼⣿⣿⣿⣿⣿⣿⡇⠀⠀")
+    print("⠀⠀⠘⢿⣿⣿⣿⣿⣿⡟⢁⣴⣿⣿⣿⣿⣿⣿⣦⡈⢻⣿⣿⣿⣿⣿⡿⠃⠀⠀")
+    print("⠀⠀⠀⠀⠈⠉⠛⠻⠿⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡾⠿⠟⠛⠉⠁⠀⠀⠀⠀")
+    print("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀")
     time.sleep(2)
-    print("The ogre pushes you aside before you're able to fully impale its chest.")
-    health=health-5
-    ogrehealth=ogrehealth-15
+    print("[THE OGRE CHALLENGES YOU TO A BATTLE]")
+    ogrehealth=250
     time.sleep(1)
-    print(f"[THE OGRE NOW HAS {ogrehealth} HEALTH]")
+    print("[THE OGRE HAS 250 HEALTH]")
     time.sleep(1)
-    print(f"[YOU NOW HAVE {health} HEALTH")
+    print(f"[YOU HAVE {health} HEALTH]")
     time.sleep(1)
-    print("You see the ogre stand back up and look at you with rage.")
-    time.sleep(2)
-    print("Your choice. What attack do you do now?")
-    ogrefightsword=input("Do you throw your sword? Run in for its other leg? Go for the heart? (throw/leg/heart)")
-    valid=["throw","leg","heart"]
-    while(ogrefightsword not in valid):
-        print("So?")
-        ogrefightsword=input("Do you throw your sword? Run in for its other leg? Go for the heart? (throw/leg/heart)")
-    if ogrefightsword=="throw":
-        print("You look at your hand holding your sword.")
-        time.sleep(1)
-        print("You wind your arm back and launch your sword at the ogre.")
-        time.sleep(1)
-        print(". . .")
+    forestbattle=input("[ACCEPT?] [YES] [NO]")
+    valid=["YES","NO"]
+    while(forestbattle not in valid):
+        forestbattle=input("[ACCEPT? [YES] [NO] (YES/NO)")
+    if forestbattle=="NO":
+        print("You try to flee, but the OGRE knocks a tree down in front of you. You can't escape, you HAVE TO FIGHT!")
         time.sleep(2)
-        print("Your sword is soaring through the air.")
+        print("[THE TREE KNOCKS YOU BACK AND DEALS 10 DAMAGE]")
+        health=health-10
+        print(f"[YOU NOW HAVE {health} HEALTH]")
+    elif forestbattle=="YES":
+        print("You tense up.")
+    
+    print(f"You pull out your {dweapon}.")
+    time.sleep(1)
+    print("You look at the ogre twice your height.")
+    time.sleep(1)
+    print("The ogre swings his club at you.")
+    time.sleep(1)
+    print("You jump back at the last second.")
+    time.sleep(1)
+    print("You're about 3 yards away from the ogre.")
+
+    if dweapon=="mighty sword":
+        print("You run foward with your sword.")
         time.sleep(1)
-        print("It hits the ogre's eye.")
+        print("The ogre swings again.")
         time.sleep(1)
-        print("[MASSIVE CRITCAL HIT!!]")
+        print("You slide under his club and go for its leg.")
+        ogrehealth=ogrehealth-damage
         time.sleep(1)
-        print("[DEALT 70 DAMAGE]")
+        print(f"[THE OGRE NOW HAS {ogrehealth} HEALTH]")
         time.sleep(1)
+        print("The ogre falls back in pain.")
+        time.sleep(1)
+        print("Its finger falls towards you.")
+        time.sleep(1)
+        print("It's too late.")
+        print("You take too long to back up and it hits you back.")
+        health=health-10
+        time.sleep(1)
+        print(f"[YOU NOW HAVE {health} HEALTH]")
+        time.sleep(1)
+        print("You stand up and jump on top of the ogre with your sword extended toward its heart.")
+        time.sleep(2)
+        print("The ogre pushes you aside before you're able to fully impale its chest.")
+        health=health-5
+        ogrehealth=ogrehealth-15
+        time.sleep(1)
+        print(f"[THE OGRE NOW HAS {ogrehealth} HEALTH]")
+        time.sleep(1)
+        print(f"[YOU NOW HAVE {health} HEALTH")
+        time.sleep(1)
+        print("You see the ogre stand back up and look at you with rage.")
+        time.sleep(2)
+        print("Your choice. What attack do you do now?")
+        ogrefightsword=input("Do you throw your sword? Run in for its other leg? Go for the heart? (throw/leg/heart)")
+        valid=["throw","leg","heart"]
+        while(ogrefightsword not in valid):
+            print("So?")
+            ogrefightsword=input("Do you throw your sword? Run in for its other leg? Go for the heart? (throw/leg/heart)")
+        if ogrefightsword=="throw":
+            print("You look at your hand holding your sword.")
+            time.sleep(1)
+            print("You wind your arm back and launch your sword at the ogre.")
+            time.sleep(1)
+            print(". . .")
+            time.sleep(2)
+            print("Your sword is soaring through the air.")
+            time.sleep(1)
+            print("It hits the ogre's eye.")
+            time.sleep(1)
+            print("[MASSIVE CRITCAL HIT!!]")
+            time.sleep(1)
+            print("[DEALT 70 DAMAGE]")
+            time.sleep(1)
         
-        
-        
+#-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+CAVERN-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+print
