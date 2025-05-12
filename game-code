@@ -36,6 +36,7 @@ if start=="y":
     reviveability="False"
     easteregg1="False"
     easteregg2="False"
+    foughtogre="False"
 elif start=="n":
     print("Another time then.")
     exit()
@@ -1142,7 +1143,13 @@ elif forestmove1=="right":
             time.sleep(1)
             print("[DEALT 70 DAMAGE]")
             time.sleep(1)
+    
+    elif dweapon=="sturdy bow":
+        print("bleh bleh bleh")
         
+    elif dweapon=="mystical staff":
+        
+    foughtogre="True"
 #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+CAVERN-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 print
