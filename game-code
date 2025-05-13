@@ -1034,6 +1034,9 @@ elif forestmove1=="right":
                                     
                                     elif takecrystal=="n":
                                         print("You walk right on by it.")
+                    
+                    elif mazemove1=="left":
+                        
                                             
                                 
 #----------------BREAK-BETWEEN-MAZE-+-MOUNTAINS------------------------#
@@ -1078,7 +1081,7 @@ elif forestmove1=="right":
         health=health-5
         print(f"[YOU NOW HAVE {health} HEALTH]")
     elif forestbattle=="YES":
-        print("You tense up.")
+        print("")
     
     print(f"You pull out your {dweapon}.")
     time.sleep(1)
@@ -1088,7 +1091,7 @@ elif forestmove1=="right":
     time.sleep(1)
     print("You jump back at the last second.")
     time.sleep(1)
-    print("You're about 3 yards away from the ogre.")
+    print("You're a couple yards away from the ogre.")
 
     if dweapon=="mighty sword":
         print("You run foward with your sword.")
