@@ -1214,15 +1214,35 @@ elif forestmove1=="right":
                     time.sleep(1)
                     print("The ogre slams its hand way behind you and you make it to the enterance of a cave.")
                     time.sleep(1)
-                    print("The ogre ")
-                
-                
+                    print("The ogre trys to follow you in but ends up making some rocks fall in front of the enterance.")
+                    time.sleep(1)
+                    print("You now wander in the dark.")
+                    sword="lost"
+        elif ogrefightsword=="leg":
+            print("---")
+        
+        elif ogrefightsword=="heart":
+            print("---")
+            
+        
     elif dweapon=="sturdy bow":
-        print("bleh bleh bleh")
+        print("[UNFINISHED FIGHT :( ]")
         
     elif dweapon=="mystical staff":
-        
+        print("[UNFINISHED FIGHT :( ]")
     foughtogre="True"
 #-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+CAVERN-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-print
+time.sleep(3)
+print("After some wandering, you find that the cavern keeps going deeper. ")
+if sword=="lost":
+    print("Along the way, you find a refurbished mighty sword.")
+    dweapon="refurbished mighty sword"
+    damage=35
+    time.sleep(2)
+    print(f"[{dweapon} AQUIRED]")
+    time.sleep(1)
+    print(f"[YOU NOW DEAL {damage} DAMAGE]")
+    
+else:
+    print("")
